@@ -2,7 +2,6 @@
 
 
 # for 循环
-
 for item in {1..5}
 do
   echo $item
@@ -31,9 +30,6 @@ for ((i=0;i<10;i++))
 do
   echo $i
 done
-
-echo $count
-# 条件语句
 
 if [ $count -le 10 ]
 then 
