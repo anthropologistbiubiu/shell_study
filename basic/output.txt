@@ -1,0 +1,1 @@
+func/func.sh: line 32: type: sub: not found
