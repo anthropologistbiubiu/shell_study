@@ -10,5 +10,7 @@ NR > 1 {
     VSZ_SUM+=$5
     RSS_SUM+=$6
 }
-printf("MEM TOTAL\nVSZ_SUM:%.1fM,RSS_SUM:%.3fM\n", VSZ_SUM/1024, RSS_SUM_MB/1024);
+END {
+    printf("MEM TOTAL\nVSZ_SUM:%.1fM,RSS_SUM:%.3fM\n", VSZ_SUM/1024, RSS_SUM/1024);
+}
 ' $1
