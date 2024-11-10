@@ -1,2 +1,6 @@
 在feature1分支修改test文件
+<<<<<<< HEAD
 在feature2分支修改test文件
+=======
+在feature2分支修改test文件
+>>>>>>> 875e020eb7bbe54151dce8df138f242f6b26799e
