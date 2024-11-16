@@ -1,0 +1,16 @@
+    gantt
+    title Project Timeline with Delays and Dependencies
+    dateFormat  YYYY-MM-DD
+    excludes    weekends
+
+    section Task Planning
+    Requirements Gathering   :done,   req1, 2024-11-01, 3d
+    Initial Design (Planned) :des1,after req1 2024-11-04, 2d
+    Initial Design (Delayed) :crit, after des1, 2d
+    Implementation (Phase 1) :crit,   imp1, after des1_delay, 5d
+    Testing (Planned)        :test_planned, after imp1, 4d
+    Testing (Delayed)        :test_delay, after test_planned, 1d
+    Final Review (Pending)   :rev1, after test_delay, 3d
+
+    section Finalization
+    Deployment               :milestone, deploy, after rev1, 0d
