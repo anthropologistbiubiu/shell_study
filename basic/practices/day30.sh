@@ -2,5 +2,4 @@
 
 
 
-grep -nir "ESTABLISHED" netstate.txt | awk '{print $4}' | cut  -d ':' -f 1 | sort -nr | uniq -c  | 
-awk  '{print$1,$2}'
+grep -nir "tcp" netstate.txt | awk '{print $5}' | cut  -d ':' -f 1 | sort | uniq -c  | sort -k1r | awk '{print$1,$2}'  
